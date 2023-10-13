@@ -1,0 +1,130 @@
+*{
+ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Lato', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+}
+.shadow{
+    box-shadow: 2px 2px 10px white;
+}
+.navbar{
+    background: rgba(24, 23, 23, 0.816);
+}
+body::before{
+    content: '';
+    height: 70px;
+    display: block;
+}
+/*---------------------hero------------*/
+#hero{
+    height: 70vh;
+    width: 100%;
+    position: relative;
+
+}
+#hero .shadow{
+    background: linear-gradient(rgba(255, 240, 240, 0.042),rgba(238, 230, 230, 0.261)),url(hero-bg.jpg);
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#hero .hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 2rem 2rem 2rem black;
+    text-align: center;
+    
+}
+#hero .hero-text h1{
+    font-size: 6rem;
+    color: white;
+    font-weight: normal;
+}
+#hero .hero-text p{
+    font-size: 2rem;
+    text-shadow: 1rem 1rem 1rem black;
+}
+
+/*-------change========================*/
+#change{
+    text-align: center;
+}
+/*-----------------gallery----------------*/
+#gallery{
+    text-align: center;
+    margin-top: 3rem;
+}
+.bg-mission{
+    background: rgba(53, 14, 225, 0.357);
+    padding: 1rem 1rem;
+    color: black;
+    
+}
+/*--------------mission=========================*/
+.mission h1{
+    font-size: 4rem;
+    font-weight: normal;
+}
+/*-------------footer-------------*/
+footer{
+    height: 200px;
+    margin-top: 3rem;
+    
+  
+}
+.cd1{
+    background-color: rgba(95, 170, 204, 0.433);
+
+}
+.cd2{
+    background-color: rgba(95, 204, 99, 0.433);
+}
+.cd1:hover{
+    
+    transform: translateY(-10px);
+    animation:2s;
+
+}
+.cd2:hover{
+    
+    transform: translateY(-10px);
+    animation:2s;
+
+}
+/*------------media===================*/
+@media only screen and (max-width: 500px){
+    #hero .hero-text h1{
+        font-size: 4rem;
+    }
+    #hero .hero-text p{
+        font-size: 1.4rem;
+    }
+    #change h1{
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+    #change p{
+        font-size: 1rem;
+        
+    }
+    .mission p{
+        font-size: 1rem;
+    }
+}
